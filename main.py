@@ -48,6 +48,7 @@ def js_post_validate(req, resp, resource, params):
 
 
 class Constants:
+    """ for constants"""
     pass
 
 
@@ -63,6 +64,13 @@ class ReqResource(Constants):
     @falcon.before(js_body)
     @falcon.after(js_response)
     def on_post(self, req, resp, secret):
+        pass
+
+
+class InfoResource(Constants):
+    @falcon.before(js_body)
+    @falcon.after(js_response)
+    def on_get(self, req, resp, pipe_id):
         pass
 
 
