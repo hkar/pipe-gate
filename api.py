@@ -43,7 +43,7 @@ def js_post_validate(req, resp, resource, params):
     except ValueError:
         raise falcon.HTTPError(falcon.HTTP_400,
                                'Malformed JSON',
-                               'Could not decode the request body. The '
+                               'Could not decode the Gate body. The '
                                'JSON was incorrect.')
 
 

@@ -1,5 +1,5 @@
 web:
   build: .
-  command: gunicorn -b 0.0.0.0:8000 main:app
+  command: gunicorn -b 0.0.0.0:8000 api:app
   ports:
    - "8000:8000"
